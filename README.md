@@ -1,7 +1,7 @@
 ## HW5 Work Day Scheduler
 
 Link: https://angelfloreschicago.github.io/hw5_WorkDayScheduler/
-<img src="./images/schedule_screeshot.png">
+<img src="./images/schedule_screenshot.png">
 
 ## Page Guide/Description
 - The purpose of this website is to help the user schedule his day.
