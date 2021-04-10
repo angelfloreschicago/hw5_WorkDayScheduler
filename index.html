@@ -31,23 +31,24 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead"></p>  <!--Todays date-->
     </header>
     <!-- End header -->
 
-    <div class="container" id="saveAlert" style="text-align: center;">
-      <!-- Timeblocks start here -->
-
+    <div class="container" id="saveAlert" style="text-align: center;"> <!-- Task saved prompt -->
+      
+    <!-- Timeblocks start here -->
     </div>
     <div class="container">
       <div class="row">
         <div class="col-2 border-top border-right">
           9am
         </div>
-          <div class="col-8 border-top" >
-            <input type="text" class="form-control textarea" id="input9">
+          <div class="col-8 border-top past" >
+            <input type="text" class="form-control textarea top-left" style="height: 70px;" id="input9">
+            <span id="savedtask"></span>
           </div>
-        <div class="col-2 border-top border-left">
+        <div class="col-2 border-top border-left btnarea">
           <button name="test" class="saveBtn" id="btn9">Save</button>
         </div>
       </div>
@@ -55,10 +56,11 @@
         <div class="col border-top border-right">
           10am
         </div>
-        <div class="col-8 border-top">
-          <input type="text" class="form-control textarea" id="input10">
+        <div class="col-8 border-top past">
+          <input type="text" class="form-control textarea top-left" style="height: 70px;" id="input10">
+          <span id="savedtask10"></span>
         </div>
-        <div class="col border-top border-left">
+        <div class="col border-top border-left btnarea">
           <button class="saveBtn" id="btn10">Save</button>
         </div>
       </div>
@@ -66,10 +68,11 @@
         <div class="col border-top border-right">
           11am
         </div>
-        <div class="col-8 border-top">
-          <input type="text" class="form-control textarea" id="input11">
+        <div class="col-8 border-top past">
+          <input type="text" class="form-control textarea top-left" style="height: 70px;" id="input11">
+          <span id="savedtask11"></span>
         </div>
-        <div class="col border-top border-left">
+        <div class="col border-top border-left btnarea">
           <button class="saveBtn" id="btn11">Save</button>
         </div>
       </div>
@@ -77,10 +80,11 @@
         <div class="col border-top border-right">
           12pm
         </div>
-        <div class="col-8 border-top">
-          <input type="text" class="form-control textarea" id="input12">
+        <div class="col-8 border-top past">
+          <input type="text" class="form-control textarea top-left" style="height: 70px;" id="input12">
+          <span id="savedtask12"></span>
         </div>
-        <div class="col border-top border-left">
+        <div class="col border-top border-left btnarea">
           <button class="saveBtn" id="btn12">Save</button>
         </div>
       </div>
@@ -88,10 +92,11 @@
         <div class="col border-top border-right">
           1pm
         </div>
-        <div class="col-8 border-top">
-          <input type="text" class="form-control textarea" id="input1">
+        <div class="col-8 border-top past">
+          <input type="text" class="form-control textarea top-left" style="height: 70px;" id="input1">
+          <span id="savedtask1"></span>
         </div>
-        <div class="col border-top border-left">
+        <div class="col border-top border-left btnarea">
           <button class="saveBtn" id="btn1">Save</button>
         </div>
       </div>
@@ -99,10 +104,11 @@
         <div class="col border-top border-right">
           2pm
         </div>
-        <div class="col-8 border-top">
-          <input type="text" class="form-control textarea" id="input2">
+        <div class="col-8 border-top past">
+          <input type="text" class="form-control textarea top-left" style="height: 70px;" id="input2">
+          <span id="savedtask2"></span>
         </div>
-        <div class="col border-top border-left">
+        <div class="col border-top border-left btnarea">
           <button class="saveBtn" id="btn2">Save</button>
         </div>
       </div>
@@ -110,10 +116,11 @@
         <div class="col border-top border-right">
           3pm
         </div>
-        <div class="col-8 border-top">
-          <input type="text" class="form-control textarea" id="input3">
+        <div class="col-8 border-top past">
+          <input type="text" class="form-control textarea top-left" style="height: 70px;" id="input3">
+          <span id="savedtask3"></span>
         </div>
-        <div class="col border-top border-left">
+        <div class="col border-top border-left btnarea">
           <button class="saveBtn" id="btn3">Save</button>
         </div>
       </div>
@@ -121,10 +128,11 @@
         <div class="col border-top border-right">
           4pm
         </div>
-        <div class="col-8 border-top">
-          <input type="text" class="form-control textarea" id="input4">
+        <div class="col-8 border-top past">
+          <input type="text" class="form-control textarea top-left" style="height: 70px;" id="input4">
+          <span id="savedtask4"></span>
         </div>
-        <div class="col border-top border-left">
+        <div class="col border-top border-left btnarea">
           <button class="saveBtn" id="btn4">Save</button>
         </div>
       </div>
@@ -132,15 +140,16 @@
         <div class="col border-top border-right">
           5pm
         </div>
-        <div class="col-8 border-top">
-          <input type="text" class="form-control textarea" id="input5">
+        <div class="col-8 border-top past">
+          <input type="text" class="form-control textarea top-left" style="height: 70px;" id="input5">
+          <span id="savedtask5"></span>
         </div>
-        <div class="col border-top border-left">
+        <div class="col border-top border-left btnarea">
           <button class="saveBtn" id="btn5">Save</button>
         </div>
       </div>
     </div>
-
+<!-- Time blocks end here -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
